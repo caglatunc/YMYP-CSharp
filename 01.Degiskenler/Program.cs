@@ -8,7 +8,11 @@ string name;// string'in atamasız (default) değeri null'dır. Burada bir değe
 int age; // age'in default değeri 0'dır.
 bool isActive; // bool'un default değeri false'dir.
 
-string nameLastName = " Çağla Tunç";
+string nameLastName = " Çağla Tunç Savaş";
+
+char karakter = 'A';
+string aciklama ="ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+
 Console.WriteLine(nameLastName);
 
 
