@@ -11,7 +11,7 @@ bool isActive; // bool'un default değeri false'dir.
 string nameLastName = " Çağla Tunç Savaş";
 
 char karakter = 'A';
-string aciklama ="ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+string aciklama ="ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
 
 Console.WriteLine(nameLastName);
 
