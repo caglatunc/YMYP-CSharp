@@ -3,7 +3,7 @@
 
 //string, int, decimal, double, float, bool, DateTime, Object
 
-string name;// string'in atamasız (default) değeri null'dır. Burada bir değer tanımlamadıkm ve kodu ; sonlandırdık.Memory de null olarak tuulur.
+string name;// string'in atamasız (default) değeri null'dır. Burada bir değer tanımlamadım ve kodu ; sonlandırdık.Memory de null olarak tuulur.
 
 int age; // age'in default değeri 0'dır.
 bool isActive; // bool'un default değeri false'dir.
