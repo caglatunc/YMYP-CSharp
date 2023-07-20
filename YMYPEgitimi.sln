@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.Degiskenler", "01.Degiskenler\01.Degiskenler.csproj", "{97BF39C9-D29F-47C4-84E8-B2698569CB13}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01.Degiskenler", "01.Degiskenler\01.Degiskenler.csproj", "{97BF39C9-D29F-47C4-84E8-B2698569CB13}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.DegerTiplerVeReferansTipler", "02.DegerTiplerVeReferansTipler\02.DegerTiplerVeReferansTipler.csproj", "{D7BA92C6-A5ED-428F-B52B-1A6461305194}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02.DegerTiplerVeReferansTipler", "02.DegerTiplerVeReferansTipler\02.DegerTiplerVeReferansTipler.csproj", "{D7BA92C6-A5ED-428F-B52B-1A6461305194}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.Operatorler", "03.Operatorler\03.Operatorler.csproj", "{BB8A02DB-1581-49C8-9735-BBCB875CC021}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03.Operatorler", "03.Operatorler\03.Operatorler.csproj", "{BB8A02DB-1581-49C8-9735-BBCB875CC021}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.SartBloglari", "04.SartBloglari\04.SartBloglari.csproj", "{63F6088B-F6DC-4728-8522-2DBE9C887330}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04.SartBloglari", "04.SartBloglari\04.SartBloglari.csproj", "{63F6088B-F6DC-4728-8522-2DBE9C887330}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.Listeler", "05.Listeler\05.Listeler.csproj", "{61299F34-E93F-4ABE-9BF1-A1CFC84554AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05.Listeler", "05.Listeler\05.Listeler.csproj", "{61299F34-E93F-4ABE-9BF1-A1CFC84554AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.Donguler", "06.Donguler\06.Donguler.csproj", "{6D5069D6-D3EF-4E58-9C8E-4A2FC72F6508}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06.Donguler", "06.Donguler\06.Donguler.csproj", "{6D5069D6-D3EF-4E58-9C8E-4A2FC72F6508}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.NameGoster", "07.NameGoster\07.NameGoster.csproj", "{D9F652D6-0AA8-475A-AE92-0D684311E7B8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{6D5069D6-D3EF-4E58-9C8E-4A2FC72F6508}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D5069D6-D3EF-4E58-9C8E-4A2FC72F6508}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D5069D6-D3EF-4E58-9C8E-4A2FC72F6508}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9F652D6-0AA8-475A-AE92-0D684311E7B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9F652D6-0AA8-475A-AE92-0D684311E7B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9F652D6-0AA8-475A-AE92-0D684311E7B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9F652D6-0AA8-475A-AE92-0D684311E7B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
