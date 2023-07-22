@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace _11.ArabalarConsoleApp;
+﻿namespace _11.ArabalarConsoleApp;
 
 internal class Program
 {

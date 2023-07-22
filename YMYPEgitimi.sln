@@ -15,15 +15,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05.Listeler", "05.Listeler\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06.Donguler", "06.Donguler\06.Donguler.csproj", "{6D5069D6-D3EF-4E58-9C8E-4A2FC72F6508}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.NameGoster", "07.NameGoster\07.NameGoster.csproj", "{D9F652D6-0AA8-475A-AE92-0D684311E7B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07.NameGoster", "07.NameGoster\07.NameGoster.csproj", "{D9F652D6-0AA8-475A-AE92-0D684311E7B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.Oyun_SayiTahminEt", "08.Oyun_SayiTahminEt\08.Oyun_SayiTahminEt.csproj", "{2C8BCA5C-ED36-4E75-97B5-2D174C1E9E2F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08.Oyun_SayiTahminEt", "08.Oyun_SayiTahminEt\08.Oyun_SayiTahminEt.csproj", "{2C8BCA5C-ED36-4E75-97B5-2D174C1E9E2F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.HataYonetimi", "09.HataYonetimi\09.HataYonetimi.csproj", "{97D9FC12-DBF4-4592-B6DF-954948230112}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09.HataYonetimi", "09.HataYonetimi\09.HataYonetimi.csproj", "{97D9FC12-DBF4-4592-B6DF-954948230112}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.Methotlar", "10.Methotlar\10.Methotlar.csproj", "{CBD408C8-B143-4C47-AA61-7C166CB411C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10.Methotlar", "10.Methotlar\10.Methotlar.csproj", "{CBD408C8-B143-4C47-AA61-7C166CB411C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.ArabalarConsoleApp", "11.ArabalarConsoleApp\11.ArabalarConsoleApp.csproj", "{61EDA82D-9368-49C2-BDDC-86840DD66C73}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "11.ArabalarConsoleApp", "11.ArabalarConsoleApp\11.ArabalarConsoleApp.csproj", "{61EDA82D-9368-49C2-BDDC-86840DD66C73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.Sinif_Yoklaması", "12.Sinif_Yoklaması\12.Sinif_Yoklaması.csproj", "{2B400BED-2715-4BB7-8029-55504824DAD8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{61EDA82D-9368-49C2-BDDC-86840DD66C73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61EDA82D-9368-49C2-BDDC-86840DD66C73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61EDA82D-9368-49C2-BDDC-86840DD66C73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B400BED-2715-4BB7-8029-55504824DAD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B400BED-2715-4BB7-8029-55504824DAD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B400BED-2715-4BB7-8029-55504824DAD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B400BED-2715-4BB7-8029-55504824DAD8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

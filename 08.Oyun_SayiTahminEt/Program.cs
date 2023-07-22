@@ -1,6 +1,6 @@
 ﻿Console.WriteLine("Please enter your name:");
 string name = Console.ReadLine();
-Console.WriteLine("Welcome to number prediction game!" + name);
+Console.WriteLine("Welcome to number guessing game!" + name);
 Random random = new ();
 
 int number = random.Next(1,10);
@@ -16,7 +16,7 @@ while (number != guess)
     if (int.TryParse(guessNumber, out guess) == false) // if (!int.TryParse(guessNumber, out guess) başına ünlem konulunca aynı anlamı veriyor. ! konulmazsa TRUE sayar ya da ilk yaptığım gibi false olması için belirtilmeli.
     {
         Console.WriteLine("Enter only number!");
-        //continue;
+        continue;
     }
 
     if (guess > 10)
