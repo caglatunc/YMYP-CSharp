@@ -1,61 +1,73 @@
-﻿namespace _12.SınıfYoklaması
+﻿namespace _12.SınıfYoklamasi
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Sinif sinif = new Sinif();
 
-            //Öğrenci listesini ve öğrenci numaralarını giriyoruz.
+
             List<Ogrenci> ogrenciListesi = new List<Ogrenci>();
+
+            ogrenciListesi.Add(new Ogrenci() { OgrenciAdi = "Cagla", OgrenciSoyadi = "Tunc", OgrenciNumarasi = 5000, SiniftaMi = false });
+            ogrenciListesi.Add(new Ogrenci() { OgrenciAdi = "Ercan", OgrenciSoyadi = "Savas", OgrenciNumarasi = 5000, SiniftaMi = true });
+            Console.WriteLine("Öğreci Yoklama Sistemi");
+            Console.WriteLine("İşlem Listesi: Seçim yapınız");
+            Console.WriteLine("1.Öğrenci Listesini Göster");
+            Console.WriteLine("2.Yoklama Al");
+            Console.WriteLine("3.Gelmeyen Öğrenci Listesi");
+            Console.WriteLine("4.Çıkış");
+
+            while (true)
             {
-                new Ogrenci("Ali","1001");
-                new Ogrenci("Yılmaz", "Türk", "1002");
-                new Ogrenci("Merve", "Ses", "1010");
-                new Ogrenci("Murat", "Keskin", "1211");
-                new Ogrenci("Burak", "Yılmaz", "1275");
-                new Ogrenci("Neslihan", "Han", "2139");
-                new Ogrenci("Şahin", "Pek", "1486");
-                new Ogrenci("Melisa", "Tanık", "1943");
-                new Ogrenci("Gamze", "Yıldız", "2031");
-                new Ogrenci("Alihan", "Dertli", "1221");
-          
-            }
+                string cevap = Console.ReadLine();
 
-
-
-            while(true)
-            {
-                Console.WriteLine("1.Öğrenci Listesi ve Öğrenci Numrası");
-                Console.WriteLine("2.Yoklama Al");
-                Console.WriteLine("3.Yoklamayı Göster");
-                Console.WriteLine("5.Gelmeyen Öğrenci Listesi");
-                Console.WriteLine("Çıkış");
-
-
-                string OgrenciAdi= Console.ReadLine();
-                if(OgrenciAdi != null)
+                if (cevap == "Listeyi Göster")
                 {
-                    Console.WriteLine("Öğrenci adını giriniz");
-                    string ad = Console.ReadLine();
-                    Console.WriteLine("Öğrenci numarasını giriniz");
-                    string numara = Console.ReadLine();
-                   
 
-               
-                    
-                        
+                    foreach (Ogrenci ogrenci in ogrenciListesi)
+                    {
+                        Console.WriteLine($" Öğrenci Adı: {ogrenci.OgrenciAdi} - Öğrenci Soyadı: {ogrenci.OgrenciSoyadi} - Öğrenci Numarası: {ogrenci.OgrenciNumarasi} - {ogrenci.SiniftaMi}");
+                    }
+                }
+                else if (cevap == "Yoklama Al")
+                {
+                    Console.WriteLine("Öğrenci numarasını yazın:"); // yoklama alma işlemi öğrenci numarası istesin
+                    string ogrenciNumarasiString = Console.ReadLine();
+
+                    int ogrenciNumarasi = 0;
+                    if (!int.TryParse(ogrenciNumarasiString, out ogrenciNumarasi))
+                    {
+                        Ogrenci ogrenci = ogrenciListesi.Find(o => o.OgrenciNumarasi == ogrenciNumarasi);
+                        if (ogrenci != null)
+                        {
+                            ogrenci.SiniftaMi = true;
+                            Console.WriteLine($"{ogrenci.OgrenciAdi} adlı öğrenci yoklama alındı ve sınıfta.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Geçersiz öğrenci numarası! Lütfen tekrar deneyin.");
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("Öğrenci Numarası bir sayı olmalıdır.");
+                    }
+
                 }
 
 
-                
+
+
+
             }
-          
 
-          
 
-           
-         
+
+
+
+
+
+
 
         }
     }
@@ -64,6 +76,8 @@
 public class Ogrenci
 {
     public string OgrenciAdi;
-    public bool evetCevabi=true;
-    public bool hayırCevabi = false;
+    public string OgrenciSoyadi;
+    public int OgrenciNumarasi;
+    public bool SiniftaMi = false;
+
 }
