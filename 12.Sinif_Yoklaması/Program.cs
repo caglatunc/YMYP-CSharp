@@ -1,83 +1,124 @@
-﻿namespace _12.SınıfYoklamasi
+﻿using System;
+
+public class Ogrenci
+{
+    public string Adi { get; set; }
+    public string Soyadi { get; set; }
+    public int Numarasi { get; set; }
+    public bool SiniftaMi { get; set; }
+
+
+
+}
+
+namespace _12.SınıfYoklamasi
 {
     internal class Program
     {
         static void Main(string[] args)
         {
+            List<Ogrenci> ogrenciler = new List<Ogrenci>
+            {
+                new Ogrenci { Adi = "Ali", Soyadi = "Yılmaz", Numarasi = 1, SiniftaMi = true },
+                new Ogrenci { Adi = "Ayşe", Soyadi = "Kara", Numarasi = 2, SiniftaMi = false },
+                new Ogrenci { Adi = "Mehmet", Soyadi = "Demir", Numarasi = 3, SiniftaMi = true },
+            };
 
 
-            List<Ogrenci> ogrenciListesi = new List<Ogrenci>();
-
-            ogrenciListesi.Add(new Ogrenci() { OgrenciAdi = "Cagla", OgrenciSoyadi = "Tunc", OgrenciNumarasi = 5000, SiniftaMi = false });
-            ogrenciListesi.Add(new Ogrenci() { OgrenciAdi = "Ercan", OgrenciSoyadi = "Savas", OgrenciNumarasi = 5000, SiniftaMi = true });
-            Console.WriteLine("Öğreci Yoklama Sistemi");
-            Console.WriteLine("İşlem Listesi: Seçim yapınız");
-            Console.WriteLine("1.Öğrenci Listesini Göster");
-            Console.WriteLine("2.Yoklama Al");
-            Console.WriteLine("3.Gelmeyen Öğrenci Listesi");
-            Console.WriteLine("4.Çıkış");
+            Console.WriteLine("Öğreci Yoklama Sistemine Hoşgeldiniz");
+            Console.WriteLine("A.Öğrenci Listesini Göster");
+            Console.WriteLine("B.Yoklama Al");
+            Console.WriteLine("C.Gelmeyen Öğrenci Listesi");
+            Console.WriteLine("D.Çıkış");
 
             while (true)
             {
                 string cevap = Console.ReadLine();
 
-                if (cevap == "Listeyi Göster")
+                if (cevap == "A")
                 {
 
-                    foreach (Ogrenci ogrenci in ogrenciListesi)
+                    foreach (var ogrenci in ogrenciler)
                     {
-                        Console.WriteLine($" Öğrenci Adı: {ogrenci.OgrenciAdi} - Öğrenci Soyadı: {ogrenci.OgrenciSoyadi} - Öğrenci Numarası: {ogrenci.OgrenciNumarasi} - {ogrenci.SiniftaMi}");
+                        Console.WriteLine($" Öğrenci Adı: {ogrenci.Adi} - Öğrenci Soyadı: {ogrenci.Soyadi} - Öğrenci Numarası: {ogrenci.Numarasi} - {ogrenci.SiniftaMi}");
+
                     }
                 }
-                else if (cevap == "Yoklama Al")
+                else if (cevap == "B")
                 {
                     Console.WriteLine("Öğrenci numarasını yazın:"); // yoklama alma işlemi öğrenci numarası istesin
-                    string ogrenciNumarasiString = Console.ReadLine();
+                    string NumarasiString = Console.ReadLine();
 
-                    int ogrenciNumarasi = 0;
-                    if (!int.TryParse(ogrenciNumarasiString, out ogrenciNumarasi))
+                    if (!int.TryParse(NumarasiString, out int Numarasi))
                     {
-                        Ogrenci ogrenci = ogrenciListesi.Find(o => o.OgrenciNumarasi == ogrenciNumarasi);
-                        if (ogrenci != null)
-                        {
-                            ogrenci.SiniftaMi = true;
-                            Console.WriteLine($"{ogrenci.OgrenciAdi} adlı öğrenci yoklama alındı ve sınıfta.");
-                        }
-                        else
-                        {
-                            Console.WriteLine("Geçersiz öğrenci numarası! Lütfen tekrar deneyin.");
-                        }
+                        Console.WriteLine("Öğrenci Numarası bir sayı olmalıdır!");
+
                     }
                     else
                     {
-                        Console.WriteLine("Öğrenci Numarası bir sayı olmalıdır.");
-                    }
 
+                        Ogrenci ogrenci = ogrenciler.Find(o => o.Numarasi == Numarasi);
+
+                        if (ogrenci == null)
+                        {
+                            Console.WriteLine("Geçersiz öğrenci numarası! Lütfen tekrar deneyin.");
+                        }
+                        else if (ogrenci.SiniftaMi)
+                        {
+
+                            Console.WriteLine($"{ogrenci.Adi} {ogrenci.Soyadi} isimli öğrenci sınıfta!");
+
+                        }
+                        else
+                        {
+                            ogrenci.SiniftaMi = false;
+                            Console.WriteLine($"{ogrenci.Adi} {ogrenci.Soyadi} isimli öğrenci sınıfta değil!");
+                        }
+                        
+                    }
                 }
 
+                else if (cevap == "C")
+                {
+                    Console.WriteLine("Gelmeyen Öğrenci Listesi");
+                    foreach (var ogrenci in ogrenciler)
+                    {
+                        if (!ogrenci.SiniftaMi)
+                        {
+                            Console.WriteLine($"{ogrenci.Adi} {ogrenci.Soyadi}");
+                            Console.WriteLine($"{ogrenci.Adi} {ogrenci.Soyadi} isimli öğrenci sınıfta değil.");
+                        }
+                    }
+                }
 
+                else
+                {
+                    Console.WriteLine("Geçersiz öğrenci numarası! Lütfen tekrar deneyin.");
+                }
 
-
-
+               
             }
 
 
 
-
-
-
-
-
-
         }
+
     }
 }
 
-public class Ogrenci
-{
-    public string OgrenciAdi;
-    public string OgrenciSoyadi;
-    public int OgrenciNumarasi;
-    public bool SiniftaMi = false;
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
