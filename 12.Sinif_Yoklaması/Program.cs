@@ -22,6 +22,9 @@ namespace _12.SınıfYoklamasi
                 new Ogrenci { Adi = "Ali", Soyadi = "Yılmaz", Numarasi = 1, SiniftaMi = true },
                 new Ogrenci { Adi = "Ayşe", Soyadi = "Kara", Numarasi = 2, SiniftaMi = false },
                 new Ogrenci { Adi = "Mehmet", Soyadi = "Demir", Numarasi = 3, SiniftaMi = true },
+                new Ogrenci { Adi = "Gökmen", Soyadi = "Hisar", Numarasi = 4, SiniftaMi = false },
+                new Ogrenci { Adi = "Dilan", Soyadi = "Kale", Numarasi = 5, SiniftaMi = true },
+
             };
 
 
@@ -93,7 +96,7 @@ namespace _12.SınıfYoklamasi
 
                 else
                 {
-                    Console.WriteLine("Geçersiz öğrenci numarası! Lütfen tekrar deneyin.");
+                    Console.WriteLine("Teşekkürler. İyi dersler!.");
                 }
 
                
